@@ -42,12 +42,54 @@ addresses.Close();
     foreach (Address address in addressesList)
     {
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine($"Nome: {address.Name}");
-            Console.WriteLine($"Cognome: {address.Surname}");
-            Console.WriteLine($"Via: {address.Street}");
-            Console.WriteLine($"Città: {address.City}");
-            Console.WriteLine($"Provincia: {address.Province}");
-            Console.WriteLine($"CAP: {address.Zip}");
+            if (address.Name != "")
+            {
+                Console.WriteLine($"Nome: {address.Name}");
+            }else
+            {
+                Console.WriteLine("Nome: nome non presente");
+            }
+            if (address.Surname != "")
+            {
+                Console.WriteLine($"Cognome: {address.Surname}");
+            }
+            else
+            {
+                Console.WriteLine("Cognome: cognome non presente");
+            }
+
+            if (address.Street != "")
+            {
+                Console.WriteLine($"Via: {address.Street}");
+            }
+            else
+            {
+                Console.WriteLine("Via: via non presente");
+            }
+            if (address.City != "")
+            {
+                Console.WriteLine($"Città: {address.City}");
+            }
+            else
+            {
+                Console.WriteLine("Città: città non presente");
+            }
+            if (address.Province != "")
+            {
+                Console.WriteLine($"Provincia: {address.Province}");
+            }
+            else
+            {
+                Console.WriteLine("Provincia: provincia non presente");
+            }
+            if (address.Zip != "")
+            {
+                Console.WriteLine($"CAP: {address.Zip}");
+            }
+            else
+            {
+                Console.WriteLine("CAP: cap non presente");
+            }
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
    
