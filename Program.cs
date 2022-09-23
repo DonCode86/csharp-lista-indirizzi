@@ -47,7 +47,7 @@ addresses.Close();
                 Console.WriteLine($"Nome: {address.Name}");
             }else
             {
-                Console.WriteLine("Nome: nome non presente");
+                Console.WriteLine("Nome: >> non presente <<");
             }
             if (address.Surname != "")
             {
@@ -55,7 +55,7 @@ addresses.Close();
             }
             else
             {
-                Console.WriteLine("Cognome: cognome non presente");
+                Console.WriteLine("Cognome: >> non presente <<");
             }
 
             if (address.Street != "")
@@ -64,7 +64,7 @@ addresses.Close();
             }
             else
             {
-                Console.WriteLine("Via: via non presente");
+                Console.WriteLine("Via: >> non presente <<");
             }
             if (address.City != "")
             {
@@ -72,7 +72,7 @@ addresses.Close();
             }
             else
             {
-                Console.WriteLine("Città: città non presente");
+                Console.WriteLine("Città: >> non presente <<");
             }
             if (address.Province != "")
             {
@@ -80,7 +80,7 @@ addresses.Close();
             }
             else
             {
-                Console.WriteLine("Provincia: provincia non presente");
+                Console.WriteLine("Provincia: >> non presente <<");
             }
             if (address.Zip != "")
             {
@@ -88,7 +88,7 @@ addresses.Close();
             }
             else
             {
-                Console.WriteLine("CAP: cap non presente");
+                Console.WriteLine("CAP: >> non presente <<");
             }
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
