@@ -31,10 +31,6 @@ while (!addresses.EndOfStream)
     {
         Console.WriteLine($"L'indirizzo non e' un indirizzo valido --> {row}");
     }
-    if (addressesList.Count() > 6)
-    {
-        Console.WriteLine($"L'indirizzo non e' formattato nel modo corretto");
-    }
 }
 
 addresses.Close();
