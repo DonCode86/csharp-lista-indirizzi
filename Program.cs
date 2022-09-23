@@ -29,7 +29,7 @@ while (!addresses.EndOfStream)
     }
     catch (Exception ex)
     {
-        if (ex is IndexOutOfRangeException || ex is DirectoryNotFoundException)
+        if (ex is IndexOutOfRangeException || ex is PathTooLongException)
         Console.WriteLine($"L'indirizzo non e' un indirizzo valido --> {row}");
     }
 }
