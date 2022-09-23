@@ -42,6 +42,7 @@ addresses.Close();
     foreach (Address address in addressesList)
     {
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
             if (address.Name != "")
             {
                 Console.WriteLine($"Nome: {address.Name}");
@@ -49,6 +50,7 @@ addresses.Close();
             {
                 Console.WriteLine("Nome: >> non presente <<");
             }
+
             if (address.Surname != "")
             {
                 Console.WriteLine($"Cognome: {address.Surname}");
@@ -66,6 +68,7 @@ addresses.Close();
             {
                 Console.WriteLine("Via: >> non presente <<");
             }
+
             if (address.City != "")
             {
                 Console.WriteLine($"Città: {address.City}");
@@ -74,6 +77,7 @@ addresses.Close();
             {
                 Console.WriteLine("Città: >> non presente <<");
             }
+
             if (address.Province != "")
             {
                 Console.WriteLine($"Provincia: {address.Province}");
@@ -82,6 +86,7 @@ addresses.Close();
             {
                 Console.WriteLine("Provincia: >> non presente <<");
             }
+
             if (address.Zip != "" && address.Zip.Length == 5)
             {
                 Console.WriteLine($"CAP: {address.Zip}");
@@ -93,6 +98,7 @@ addresses.Close();
             {
                 Console.WriteLine("CAP: >> non presente <<");
             }
+
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
    
