@@ -48,6 +48,7 @@ addresses.Close();
             Console.WriteLine($"Città: {address.City}");
             Console.WriteLine($"Provincia: {address.Province}");
             Console.WriteLine($"CAP: {address.Zip}");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
    
     
