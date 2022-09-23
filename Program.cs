@@ -82,11 +82,14 @@ addresses.Close();
             {
                 Console.WriteLine("Provincia: >> non presente <<");
             }
-            if (address.Zip != "")
+            if (address.Zip != "" && address.Zip.Length == 5)
             {
                 Console.WriteLine($"CAP: {address.Zip}");
             }
-            else
+            else if (address.Zip.Length < 5)
+            {
+                Console.WriteLine($"CAP: {address.Zip} ---> Questo cap e' errato");
+            }else 
             {
                 Console.WriteLine("CAP: >> non presente <<");
             }
