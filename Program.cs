@@ -27,8 +27,9 @@ while (!addresses.EndOfStream)
         addressesList.Add(address);
         Console.WriteLine($"Indirizzo --> {name}, {surname}, {street}, {city}, {province}, {zip} <-- è stato letto correttamente");
     }
-    catch (IndexOutOfRangeException)
+    catch (Exception ex)
     {
+        if (ex is IndexOutOfRangeException || ex is DirectoryNotFoundException)
         Console.WriteLine($"L'indirizzo non e' un indirizzo valido --> {row}");
     }
 }
